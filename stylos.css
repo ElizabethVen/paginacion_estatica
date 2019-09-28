@@ -1,0 +1,51 @@
+*{
+    margin: 0;      /* Quitamos los margenes que pone por defecto el navegador */
+    padding: 0;
+} 
+
+.wrapper{
+    width: 90%;     /*  Para que se adapte al tamaño de la pantalla */
+    max-width: 1000px;     
+    margin:auto;        /* Para que se centre la pagina */
+}
+
+.wrapper h1{
+    margin:1em 0;
+    color:#024959;
+}
+
+.wraper p{
+    margin-bottom: 1em;
+}
+
+.paginacion{
+    margin:20px 0;  /* margen arriba y abajo de 20px y 0 a los lados*/
+}
+
+.paginacion ul{
+    list-style: none;   /* le quitamos las viñetas a la lista*/
+    text-align: center;    /* lo centramos */
+}
+
+.paginacion ul li{      /* Accedemos al elemento li */
+    display: inline-block;  /* Para que se ponga cada elemento de la lista uno a lado del otro*/
+    margin-right: 10px;    /* Margin de 10px a la derecha para separar los elementos de la lista 
+                            para que no esten tan pegados*/
+}
+
+.paginacion ul li a{    /* Accedemos al elemento a de la lista*/
+    display: block;
+    padding: 10px 20px;     /* padding de 10px arriba y abajo y 20px a los lados */
+    color:#fff;     /* Letra blanca de a */
+    background:#024959;     /* Fondo cyan de a */
+    text-decoration: none;  /*Le quitamos el subrayado al texto es decir la decoracion*/
+}
+/* Agregamos el efecto hover a la paginacion para que el usuario identifique en que pagina se encuentra*/
+.paginacion ul li a:hover{
+    background:#037E8C; /* Cuando el usuario pasa el mouse sobre a el color va a cambiar*/
+}
+/* para darle al usuario la sensacion de que esta en la pagina elegida */
+.paginacion ul li .active{
+    background: #037e8c; /*Cuando este en la pagina elegida a cambiara de color de fondo*/
+    font-weight: bold;      /* Y la letra de a se volvera negrita*/
+}
